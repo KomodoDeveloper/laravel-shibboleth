@@ -1,10 +1,10 @@
 {
-  "name": "jhu-wse/laravel-shibboleth",
-  "description": "Fork of uabookstore/laravel-shibboleth in order to support modern Laravel",
+  "name": "clemsonmartech/laravel-shibboleth",
+  "description": "Fork of razorbacks/laravel-shibboleth in order to support modern Laravel",
   "authors": [
     {
-      "name": "Tim Jarrett",
-      "email": "tjarrett@jhu.edu"
+      "name": "Brandon Simmons",
+      "email": "bsimmo4@clemson.edu"
     }
   ],
   "minimum-stability": "stable",
