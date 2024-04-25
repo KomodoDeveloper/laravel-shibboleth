@@ -1,6 +1,6 @@
 # Laravel Shibboleth Service Provider
 
-This package provides Shibboleth authentication for Laravel. It was forked from [uabookstores/laravel-shibboleth](17).
+This package provides Shibboleth authentication for Laravel. It was forked from [razorbacks/laravel-shibboleth](17).
 
 For development, it can _emulate_ an IdP (via [mrclay/shibalike][13]).
 
@@ -10,7 +10,7 @@ For development, it can _emulate_ an IdP (via [mrclay/shibalike][13]).
 
 Use [composer][1] to require the latest release into your project:
 
-    composer require jhu-wse/laravel-shibboleth
+    composer require clemsonmartech/laravel-shibboleth
 
 If you you would like to use the emulated IdP via shibalike, then you will need
 to manually register it on any version - this is not automatically loaded.
