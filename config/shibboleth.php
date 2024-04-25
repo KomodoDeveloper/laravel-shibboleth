@@ -34,25 +34,25 @@ return [
     'emulate_idp' => env('EMULATE_IDP', false),
     'emulate_idp_users' => [
         'admin' => [
-            'Shib-cn' => 'Admin User',
-            'Shib-mail' => 'admin@email.arizona.edu',
-            'Shib-givenName' => 'Admin',
-            'Shib-sn' => 'User',
-            'Shib-emplId' => 'admin',
+            'cn' => 'Admin User',
+            'mail' => 'admin@clemson.edu',
+            'givenName' => 'Admin',
+            'sn' => 'User',
+            'emplId' => 'admin',
         ],
         'staff' => [
-            'Shib-cn' => 'Staff User',
-            'Shib-mail' => 'staff@email.arizona.edu',
-            'Shib-givenName' => 'Staff',
-            'Shib-sn' => 'User',
-            'Shib-emplId' => 'staff',
+            'cn' => 'Staff User',
+            'mail' => 'staff@clemson.edu',
+            'givenName' => 'Staff',
+            'sn' => 'User',
+            'emplId' => 'staff',
         ],
         'user' => [
-            'Shib-cn' => 'User User',
-            'Shib-mail' => 'user@email.arizona.edu',
-            'Shib-givenName' => 'User',
-            'Shib-sn' => 'User',
-            'Shib-emplId' => 'user',
+            'cn' => 'User User',
+            'mail' => 'user@clemson.edu',
+            'givenName' => 'User',
+            'sn' => 'User',
+            'emplId' => 'user',
         ],
     ],
 
@@ -65,15 +65,15 @@ return [
     |
      */
 
-    'entitlement' => 'Shib-isMemberOf',
+    'entitlement' => 'edirgroup',
 
     'user' => [
         // fillable user model attribute => server variable
-        'name' => 'Shib-cn',
-        'first_name' => 'Shib-givenName',
-        'last_name' => 'Shib-sn',
-        'email' => 'Shib-mail',
-        'emplid' => 'Shib-emplId',
+        'name' => 'cn',
+        'first_name' => 'givenName',
+        'last_name' => 'sn',
+        'email' => 'mail',
+        'emplid' => 'clemsonXID',
     ],
 
     //The user model field (from the user array above) that should be used for authentication
