@@ -22,7 +22,7 @@ class ShibbolethUserProvider implements UserProvider
      * @param  string  $model
      * @return void
      */
-    public function __construct($model)
+    public function __construct(string $model)
     {
         $this->model = $model;
     }
@@ -101,5 +101,11 @@ class ShibbolethUserProvider implements UserProvider
     public function retrieveByToken($identifier, $token)
     {
         // Not Implemented
+    }
+
+    public function rehashPasswordIfRequired(Authenticatable $user, #[\SensitiveParameter] array $credentials, bool $force = false)
+    {
+       // Shibboleth don't use local password, do nothing
+       return;
     }
 }
